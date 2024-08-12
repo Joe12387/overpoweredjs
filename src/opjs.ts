@@ -225,9 +225,9 @@ if (typeof window !== 'undefined') {
 }
 
 // for debugging purposes only
-self.window
-  .opjs()
-  .then((fp) => console.log(fp.getFingerprint()))
-  .catch(console.error);
+// self.window
+//   .opjs()
+//   .then((fp) => console.log(fp.getFingerprint()))
+//   .catch(console.error);
 
 export default opjs;

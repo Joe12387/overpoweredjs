@@ -195,4 +195,4 @@ Use monitoring tools to track server and database performance, and set up alerts
 - Regularly update and patch the server and database software to protect against vulnerabilities.
 
 # Copyright
-(c) 2024 Joe Rutkowski (Joe12387) Joe@dreggle.com - Do Not Distribute
+(c) 2024 Joe Rutkowski (Joe12387) Joe@dreggle.com - Released under the OverpoweredJS OS Public License
