@@ -15,11 +15,11 @@ Feel free to fork this repo as long as you obey the license terms and do not cha
 
 ## TODO
 
-#### Known Issues
+### Known Issues
 - [ ] Only supports modern browsers, old browsers like MSIE will not track well even if polyfills are added.
 - [ ] The whitepaper's markdown of math functions are broken.
 
-#### Unexploited APIs
+### Unexploited APIs
 - [x] CanvasAPI (in development)
 - [x] WebGL (in development)
 - [x] Navigator object (in development)
