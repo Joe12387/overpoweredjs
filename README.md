@@ -7,6 +7,7 @@ The method of comparing fingerprint objects can vary, but a simple solution is t
 Determining the weights to add to the score for each component is the difficult part. For more, see the whitepaper in `/docs`.
 
 ## Open Source
+
 **OverpoweredJS Open Source** is a public open source library with a license that allows for use **as long as users explicitly consent to being tracked**. Furthermore, an additional restriction under the licensing is that **it can be used for non-commercial uses only**.
 
 This repo is for the Open Source edition of OverpoweredJS. OverpoweredJS OS is derivative of the CS branch minus non-public modules. More modules will be added to OS in the future, but are not yet public.
@@ -16,8 +17,11 @@ Feel free to fork this repo as long as you obey the license terms and do not cha
 ## TODO
 
 ### Known Issues
+- [ ] userAgentData.ts: fullVersionList is not properly sorted.
+- [ ] Error handling of modules is poor.
+- [ ] Module & stage performance metrics are not yet implemented.
 - [ ] Only supports modern browsers, old browsers like MSIE will not track well even if polyfills are added.
-- [ ] The whitepaper's markdown of math functions are broken.
+- [ ] The whitepaper's markdown of math functions are broken. Feel free to submit a pull request if you can fix them.
 
 ### Unexploited APIs
 - [x] CanvasAPI (in development)
@@ -26,11 +30,36 @@ Feel free to fork this repo as long as you obey the license terms and do not cha
 - [ ] AudioContext (not bothering, feel free to do it yourself)
 
 ## Closed Source
+
 **OverpoweredJS Closed Source** is a solution for businesses and organizations that require access to the most important and highest entropy fingerprinting components. These non-public modules supply more fingerprinting components in order to improve on the Open Source edition, allowing higher accuracy, among other features. This license allows for commercial use of either the Open Source or Closed Source editions.
 
 This is specifically for businesses and organizations that require commercial use and higher accuracy.
 
 To pursue potentially purchasing a license, please contact Joe+opjs@dreggle.com.
+
+## OverpoweredJS API
+The **OverpoweredJS API** uses OverpoweredJS Closed Source and server-side processing to track browser instances without having to run your own server. It is currently in development and will be able to be embedded on any site that uses HTTPS. After calling the `getFingerprint` function, you'll get something back like this:
+```json
+{
+  "clusterUUID": "0W-C9Q-WS6-OHK",
+  "hash": "981ea46cc95667439294e31fffd8d7c060a0e9f7f3f553a7c4943fa7541d9747",
+  "botScore": 1
+}
+```
+
+- The `clusterUUID` is the (hopefully) unique ID that is attached to the browser.
+- The `hash` is simply the hash of the JSON object sent to the server. It can (and will) change, but the `clusterUUID` should not.
+- The `botScore` is a score from 1 to 5 with 5 being the highest likelyhood of being a bot. As of August 2024, this only uses network data. That should change in the future.
+
+As of August 2024, the prototype service can track most Chromium-based browsers such as Google Chrome, Microsoft Edge and Opera.
+
+Support for other browsers such as Firefox, Brave and Safari is in development. These browsers may cause collisions (having the same `clusterUUID` as other browser instances). This may or may not change in the future. Particularly, Apple devices will be the least unique due to the homogeneity of Apple's software and hardware, as well as Apple's continued efforts to make their software resistant to tracking.
+
+This is intended to be a commercial API for those priced out of similar SaaS fingerprinting solutions, and is intended to be as inexpensive as possible.
+
+The prototype API is currently up and running. If you wish to have your site whitelisted and participate in the beta, please contact Joe+opjs@dreggle.com.
+
+You may participate regardless of how much traffic you have or whether or not you're going to sign up for the service when it goes into production.
 
 # Copyright
 (c) 2024 Joe Rutkowski (Joe12387) - Joe@dreggle.com - github.com/Joe12387
