@@ -38,7 +38,7 @@ This is specifically for businesses and organizations that require commercial us
 To pursue potentially purchasing a license, please contact Joe+opjs@dreggle.com.
 
 ## OverpoweredJS API
-The **OverpoweredJS API** uses OverpoweredJS Closed Source and server-side processing to track browser instances without having to run your own server. It is currently in development and will be able to be embedded on any site that uses HTTPS. After calling the `getFingerprint` function, you'll get something back like this:
+The **OverpoweredJS API** uses OverpoweredJS Closed Source and server-side processing to track browser instances without having to run your own server. It is currently available and can be embedded on any site that uses HTTPS. After calling the `getFingerprint` function, you'll get something back like this:
 ```json
 {
   "clusterUUID": "0W-C9Q-WS6-OHK",
@@ -49,15 +49,15 @@ The **OverpoweredJS API** uses OverpoweredJS Closed Source and server-side proce
 
 - The `clusterUUID` is the (hopefully) unique ID that is attached to the browser.
 - The `hash` is simply the hash of the JSON object sent to the server. It can (and will) change, but the `clusterUUID` should not.
-- The `botScore` is a score from 1 to 5 with 5 being the highest likelyhood of being a bot. As of August 2024, this only uses network data. That should change in the future.
+- The `botScore` is a score from 1 to 5 with 5 being the highest likelyhood of being a bot.
 
 As of August 2024, the prototype service can track most Chromium-based browsers such as Google Chrome, Microsoft Edge and Opera.
 
-Support for other browsers such as Firefox, Brave and Safari is in development. These browsers may cause collisions (having the same `clusterUUID` as other browser instances). This may or may not change in the future. Particularly, Apple devices will be the least unique due to the homogeneity of Apple's software and hardware, as well as Apple's continued efforts to make their software resistant to tracking.
+Support for other browsers such as Firefox, Brave and Safari is in development. These browsers may cause collisions (having the same `clusterUUID` as other browser instances). This may or may not change in the future. For the time being, non-Chromium browsers will be rejected by the API. Particularly, Apple devices will be the least unique due to the homogeneity of Apple's software and hardware, as well as Apple's continued efforts to make their software resistant to tracking.
 
 This is intended to be a commercial API for those priced out of similar SaaS fingerprinting solutions, and is intended to be as inexpensive as possible.
 
-The prototype API is currently up and running. If you wish to have your site whitelisted and participate in the beta, please contact Joe+opjs@dreggle.com.
+The prototype API is currently up and running. [You can participate here](https://github.com/Joe12387/overpoweredjs-api).
 
 You may participate regardless of how much traffic you have or whether or not you're going to sign up for the service when it goes into production.
 
