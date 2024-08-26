@@ -38,7 +38,7 @@ This is specifically for businesses and organizations that require commercial us
 To pursue potentially purchasing a license, please contact Joe+opjs@dreggle.com.
 
 ## OverpoweredJS API
-The **OverpoweredJS API** uses OverpoweredJS Closed Source and server-side processing to track browser instances without having to run your own server. It is currently available and can be embedded on any site that uses HTTPS. After calling the `getFingerprint` function, you'll get something back like this:
+The **OverpoweredJS API** uses OverpoweredJS Closed Source and server-side processing to track browser instances without having to run your own server. It is currently available and can be embedded on any site that uses HTTPS. After calling the `opjs` function, you'll get something back like this:
 ```json
 {
   "clusterUUID": "0W-C9Q-WS6-OHK",
