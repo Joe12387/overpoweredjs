@@ -1,3 +1,5 @@
+[Looking for the free fingerprinting API?](https://github.com/Joe12387/overpoweredjs-api)
+
 # OverpoweredJS
 
 **OverpoweredJS** is a family of two dual-licensed client-side JavaScript browser fingerprinting libraries designed to provide entropy to any mechanism of tracking individual browsers, enabling mutabile fingerprint analysis. The fingerprint objects OverpoweredJS creates contain identifiers (known as fingerprint components) that are used to compare to known fingerprints in a server-side database.
