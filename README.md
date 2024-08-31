@@ -1,4 +1,4 @@
-[Looking for the free fingerprinting API?](https://github.com/Joe12387/overpoweredjs-api)
+[Looking for the free fingerprinting API?](https://overpoweredjs.com/)
 
 # OverpoweredJS
 
@@ -59,7 +59,7 @@ Support for other browsers such as Firefox, Brave and Safari is in development. 
 
 This is intended to be a commercial API for those priced out of similar SaaS fingerprinting solutions, and is intended to be as inexpensive as possible.
 
-The prototype API is currently up and running. [You can participate here](https://github.com/Joe12387/overpoweredjs-api).
+The prototype API is currently up and running. [You can participate here](https://overpoweredjs.com/).
 
 You may participate regardless of how much traffic you have or whether or not you're going to sign up for the service when it goes into production.
 
