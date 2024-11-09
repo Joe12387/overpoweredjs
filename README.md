@@ -33,11 +33,13 @@ Feel free to fork this repo as long as you obey the license terms and do not cha
 
 ## Closed Source
 
-**OverpoweredJS Closed Source** is a solution for businesses and organizations that require access to the most important and highest entropy fingerprinting components. These non-public modules supply more fingerprinting components in order to improve on the Open Source edition, allowing higher accuracy, among other features. This license allows for commercial use of either the Open Source or Closed Source editions.
+Sorry, the CS branch is no longer available for licensing as it has been folded into the API's codebase.
+
+<s>**OverpoweredJS Closed Source** is a solution for businesses and organizations that require access to the most important and highest entropy fingerprinting components. These non-public modules supply more fingerprinting components in order to improve on the Open Source edition, allowing higher accuracy, among other features. This license allows for commercial use of either the Open Source or Closed Source editions.
 
 This is specifically for businesses and organizations that require commercial use and higher accuracy.
 
-To pursue potentially purchasing a license, please contact Joe+opjs@dreggle.com.
+To pursue potentially purchasing a license, please contact Joe+opjs@dreggle.com.</s>
 
 ## OverpoweredJS API
 The **OverpoweredJS API** uses OverpoweredJS Closed Source and server-side processing to track browser instances without having to run your own server. It is currently available and can be embedded on any site that uses HTTPS. After calling the `opjs` function, you'll get something back like this:
